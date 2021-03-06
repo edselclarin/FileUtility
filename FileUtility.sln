@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileUtilityCon", "FileUtilityCon\FileUtilityCon.csproj", "{90C92BE7-4909-473C-845A-12F6F12EC16A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileUtility", "FileUtility\FileUtility.csproj", "{1A4DC0CF-5DFF-4FCF-963C-F98222E3ABC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileUtility", "FileUtility\FileUtility.csproj", "{1A4DC0CF-5DFF-4FCF-963C-F98222E3ABC5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileUtilityApp", "FileUtilityApp\FileUtilityApp.csproj", "{3039DA1A-BE70-4446-9D11-5D946625D834}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileUtilityApp", "FileUtilityApp\FileUtilityApp.csproj", "{3039DA1A-BE70-4446-9D11-5D946625D834}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{90C92BE7-4909-473C-845A-12F6F12EC16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90C92BE7-4909-473C-845A-12F6F12EC16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90C92BE7-4909-473C-845A-12F6F12EC16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90C92BE7-4909-473C-845A-12F6F12EC16A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1A4DC0CF-5DFF-4FCF-963C-F98222E3ABC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1A4DC0CF-5DFF-4FCF-963C-F98222E3ABC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A4DC0CF-5DFF-4FCF-963C-F98222E3ABC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
