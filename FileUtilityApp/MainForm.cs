@@ -51,9 +51,12 @@ namespace FileUtilityApp
 
                 var folder = Folder.Get(fbd.SelectedPath);
 
-                if (MessageBox.Show(this,
-                    $"Set the timestamp of {folder.TotalFolderCount} folder(s) and {folder.TotalFileCount} file(s) to today's date and time?",
-                    this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) != DialogResult.Yes)
+                var sb = new StringBuilder();
+                sb.AppendLine($"Are you sure you want to set the timestamp of {folder.TotalFolderCount} folder(s) and {folder.TotalFileCount} file(s) to today's date and time?");
+                sb.AppendLine();
+                sb.AppendLine("NOTE: This cannot be undone.");
+                if (MessageBox.Show(this, sb.ToString(),                    
+                    this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) != DialogResult.Yes)
                     return;
 
                 folder.DirectoryChanged += DirectoryChanged;
