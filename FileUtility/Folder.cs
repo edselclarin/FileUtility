@@ -64,14 +64,22 @@ namespace FileUtility
         {
             // Change this folder.
             var diBefore = new DirectoryInfo(folder.FolderInfo.FullName);
+
+            folder.FolderInfo.CreationTime = newDt;
+            folder.FolderInfo.LastAccessTime = newDt;
             folder.FolderInfo.LastWriteTime = newDt;
+
             DirectoryChanged?.Invoke(diBefore, folder.FolderInfo);
 
             // Change files in this folder.
             foreach (var file in folder.Files)
             {
                 var fiBefore = new FileInfo(file.FullName);
+
+                file.CreationTime = newDt;
+                file.LastAccessTime = newDt;
                 file.LastWriteTime = newDt;
+
                 FileChanged.Invoke(fiBefore, file);
             }
 
